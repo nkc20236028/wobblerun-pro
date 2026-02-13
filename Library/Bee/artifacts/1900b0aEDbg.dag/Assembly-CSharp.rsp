@@ -402,8 +402,9 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Assets/CheckPoint.cs"
-"Assets/Demo/demo script/DemoPlayerController.cs"
+"Assets/Demo/demo script/CheckPoint.cs"
+"Assets/Demo/demo script/DemoPlayer.cs"
+"Assets/Demo/demo script/DisappearFloor.cs"
 "Assets/Map Object/Script/MoveGround.cs"
 "Assets/Map Object/Script/RotateBar.cs"
 -langversion:9.0

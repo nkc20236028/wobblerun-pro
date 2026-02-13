@@ -61,8 +61,9 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.62f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Demo\demo script\DemoPlayerController.cs" />
-    <Compile Include="Assets\CheckPoint.cs" />
+    <Compile Include="Assets\Demo\demo script\CheckPoint.cs" />
+    <Compile Include="Assets\Demo\demo script\DisappearFloor.cs" />
+    <Compile Include="Assets\Demo\demo script\DemoPlayer.cs" />
     <Compile Include="Assets\Map Object\Script\RotateBar.cs" />
     <Compile Include="Assets\Map Object\Script\MoveGround.cs" />
   </ItemGroup>
