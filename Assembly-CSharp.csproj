@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demo\demo script\DemoPlayerController.cs" />
+    <Compile Include="Assets\CheckPoint.cs" />
     <Compile Include="Assets\Map Object\Script\RotateBar.cs" />
     <Compile Include="Assets\Map Object\Script\MoveGround.cs" />
   </ItemGroup>

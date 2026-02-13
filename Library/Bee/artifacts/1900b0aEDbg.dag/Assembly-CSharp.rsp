@@ -402,6 +402,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/CheckPoint.cs"
 "Assets/Demo/demo script/DemoPlayerController.cs"
 "Assets/Map Object/Script/MoveGround.cs"
 "Assets/Map Object/Script/RotateBar.cs"
