@@ -61,11 +61,12 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.62f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Demo\demo script\CheckPoint.cs" />
-    <Compile Include="Assets\Demo\demo script\DisappearFloor.cs" />
-    <Compile Include="Assets\Demo\demo script\DemoPlayer.cs" />
-    <Compile Include="Assets\Map Object\Script\RotateBar.cs" />
-    <Compile Include="Assets\Map Object\Script\MoveGround.cs" />
+    <Compile Include="Assets\Demo\demo script\Player\RespawnManager.cs" />
+    <Compile Include="Assets\Demo\demo script\GameManager\CheckPoint.cs" />
+    <Compile Include="Assets\Demo\demo script\gimmick\MoveGround.cs" />
+    <Compile Include="Assets\Demo\demo script\gimmick\RotateBar.cs" />
+    <Compile Include="Assets\Demo\demo script\Player\DemoPlayer.cs" />
+    <Compile Include="Assets\Demo\demo script\gimmick\DisappearFloor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

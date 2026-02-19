@@ -22,7 +22,8 @@ public class DemoPlayer : MonoBehaviour
     Vector3 startPoint;
 
     //リスポーン用変数
-    Vector3 respawnPoint;
+    RespawnManager respawn;
+    public float fally = -10f;
 
     void Start()
     {
@@ -30,10 +31,8 @@ public class DemoPlayer : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
 
-        // スタート地点保存
-        startPosition = transform.position;
-
-        respawnPoint = transform.position;
+       controller = GetComponent<CharacterController>();
+        respawn = GetComponent<RespawnManager>();
     }
 
     void Update()
@@ -102,11 +101,13 @@ public class DemoPlayer : MonoBehaviour
         {
             currentGround = null;
         }
-         //落下時に呼び出される
-         //if(transform.position.y < -10f)
-         //{
-         //   Respawn();
-         // }
+
+        //落下チェック
+        if (transform.position.y < fally)
+        {
+            respawn.Respawn();
+            velocity = Vector3.zero;
+        }
     }
 
    　　 // 床判定＆吹っ飛び棒
@@ -136,18 +137,4 @@ public class DemoPlayer : MonoBehaviour
         }
     }
 
-   //リスポーン
-   //public void SetRespawnPoint(Vector3 point)
-   //{
-   //    respawnPoint = point;
-   //   Debug.Log("update");
-   // }
-
-   //public void Respawn()
-   // {
-   //    controller.enabled = false;
-   //    transform.position = respawnPoint;
-   //     velocity = Vector3.zero;
-   //    controller.enabled = true;
-   // }
 }
