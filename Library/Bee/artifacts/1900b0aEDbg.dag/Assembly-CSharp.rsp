@@ -403,6 +403,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Demo/demo script/GameManager/CheckPoint.cs"
+"Assets/Demo/demo script/GameManager/Goalpoint.cs"
 "Assets/Demo/demo script/gimmick/DisappearFloor.cs"
 "Assets/Demo/demo script/gimmick/MoveGround.cs"
 "Assets/Demo/demo script/gimmick/RotateBar.cs"

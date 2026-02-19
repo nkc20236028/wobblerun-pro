@@ -1,26 +1,41 @@
 using UnityEngine;
+using UnityEngine.WSA;
 
 public class CheckPoint : MonoBehaviour
 {
-    public Color activeColor = Color.green;
+    Renderer rend;
     bool activated = false;
+
+    void Start()
+    {
+        rend = GetComponentInChildren<Renderer>();
+
+        if (rend == null)
+        {
+            Debug.LogError("Renderer not found on CheckPoint");
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {
-        if (activated) return;
-
         if (other.CompareTag("Player"))
         {
-            RespawnManager rm = other.GetComponent<RespawnManager>();
+            RespawnManager respawn = other.GetComponent<RespawnManager>();
 
-            if (rm != null)
+            if (respawn != null)
             {
-                rm.SetRespawnPoint(transform);
-                activated = true;
-            }
 
-            // 色変更（見た目）
-            GetComponent<Renderer>().material.color = activeColor;
+                respawn.SetRespawnPoint(transform.position);
+
+                rend.material.color = Color.green;
+
+                activated = true;
+
+                Debug.Log("リスポーンポイントがアクティブ");
+            }
         }
+
+        
     }
 }
+

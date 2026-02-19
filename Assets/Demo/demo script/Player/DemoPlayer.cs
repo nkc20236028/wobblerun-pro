@@ -10,16 +10,13 @@ public class DemoPlayer : MonoBehaviour
 
     CharacterController controller;
     Vector3 velocity;
-    Vector3 startPosition;
+   
     //吹っ飛び用　変数
     public float knockbackPower = 10f;
     public float knockUpPower = 4f;
 
     //動く床用変数
     MoveGround currentGround;
-
-    //スタート地点
-    Vector3 startPoint;
 
     //リスポーン用変数
     RespawnManager respawn;
@@ -102,7 +99,7 @@ public class DemoPlayer : MonoBehaviour
             currentGround = null;
         }
 
-        //落下チェック
+        //落下処理
         if (transform.position.y < fally)
         {
             respawn.Respawn();
@@ -112,15 +109,7 @@ public class DemoPlayer : MonoBehaviour
 
    　　 // 床判定＆吹っ飛び棒
     void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Floor"))
-        {
-            controller.enabled = false;          // 一旦無効化
-            transform.position = startPosition;  // スタートに戻す
-            velocity = Vector3.zero;             // 落下リセット
-            controller.enabled = true;           // 再有効化
-        }
-        
+    { 
           //吹っ飛び棒用
         if (other.CompareTag("Obstacle"))
         {
