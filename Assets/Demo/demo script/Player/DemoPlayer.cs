@@ -3,10 +3,10 @@ using UnityEngine;
 public class DemoPlayer : MonoBehaviour
 {
    //プレイヤー初期設定
-    public float moveSpeed = 5f;
-    public float jumpPower = 5f;
+    //public float moveSpeed = 5f;
+    //public float jumpPower = 5f;
     public float gravity = -9.81f;
-    public float mouseSensitivity = 3f;
+    //public float mouseSensitivity = 3f;
 
     CharacterController controller;
     Vector3 velocity;
@@ -22,6 +22,8 @@ public class DemoPlayer : MonoBehaviour
     RespawnManager respawn;
     public float fally = -10f;
 
+    bool canControl = true;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -34,15 +36,17 @@ public class DemoPlayer : MonoBehaviour
 
     void Update()
     {
-        // マウス左右
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * 100f * Time.deltaTime;
-        transform.Rotate(Vector3.up * mouseX);
+        if (!canControl) return;
 
-        // WASD移動
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-        Vector3 move = transform.right * x + transform.forward * z;
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        // マウス左右
+        //float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * 100f * Time.deltaTime;
+        //transform.Rotate(Vector3.up * mouseX);
+
+       // WASD移動
+       //float x = Input.GetAxis("Horizontal");
+       //float z = Input.GetAxis("Vertical");
+       //Vector3 move = transform.right * x + transform.forward * z;
+       //controller.Move(move * moveSpeed * Time.deltaTime);
 
         //動く床　床の移動量を取得
         Vector3 groundDelta = Vector3.zero;
@@ -56,16 +60,16 @@ public class DemoPlayer : MonoBehaviour
             velocity.y = -2f;
 
         // ジャンプ
-        if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
-            velocity.y = Mathf.Sqrt(jumpPower * -2f * gravity);
+        //if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
+        //    velocity.y = Mathf.Sqrt(jumpPower * -2f * gravity);
 
         // 重力
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
         //動く床　移動
-        Vector3 totalMove = move * moveSpeed + velocity + groundDelta / Time.deltaTime;
-        controller.Move(totalMove * Time.deltaTime);
+        //Vector3 totalMove = move * moveSpeed + velocity + groundDelta / Time.deltaTime;
+        //controller.Move(totalMove * Time.deltaTime);
 
         //接地確認
         Debug.Log(controller.isGrounded);
@@ -124,6 +128,12 @@ public class DemoPlayer : MonoBehaviour
             velocity.y = knockUpPower;
 
         }
+    }
+
+    public void DisableControl()
+    {
+        canControl = false;
+        velocity = Vector3.zero;
     }
 
 }
