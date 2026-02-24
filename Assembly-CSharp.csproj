@@ -62,13 +62,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demo\demo script\GameManager\Goalpoint.cs" />
+    <Compile Include="Assets\PlayerStep\BabyStepsOrbitCamera.cs" />
     <Compile Include="Assets\Demo\demo script\Player\RespawnManager.cs" />
+    <Compile Include="Assets\PlayerStep\BabyStepsPhysics.cs" />
     <Compile Include="Assets\Demo\demo script\GameManager\CheckPoint.cs" />
+    <Compile Include="Assets\Player\PlayerCon.cs" />
     <Compile Include="Assets\Demo\demo script\gimmick\MoveGround.cs" />
     <Compile Include="Assets\Demo\demo script\gimmick\RotateBar.cs" />
-    <Compile Include="Assets\BabyStepsPhysics.cs" />
-    <Compile Include="Assets\BabyStepsOrbitCamera.cs" />
     <Compile Include="Assets\Demo\demo script\Player\DemoPlayer.cs" />
+    <Compile Include="Assets\Map Object\Script\KnockbackObject.cs" />
     <Compile Include="Assets\Demo\demo script\gimmick\DisappearFloor.cs" />
   </ItemGroup>
   <ItemGroup>

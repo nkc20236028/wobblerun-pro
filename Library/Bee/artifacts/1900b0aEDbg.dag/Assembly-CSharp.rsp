@@ -402,8 +402,6 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Assets/BabyStepsOrbitCamera.cs"
-"Assets/BabyStepsPhysics.cs"
 "Assets/Demo/demo script/GameManager/CheckPoint.cs"
 "Assets/Demo/demo script/GameManager/Goalpoint.cs"
 "Assets/Demo/demo script/gimmick/DisappearFloor.cs"
@@ -411,6 +409,10 @@
 "Assets/Demo/demo script/gimmick/RotateBar.cs"
 "Assets/Demo/demo script/Player/DemoPlayer.cs"
 "Assets/Demo/demo script/Player/RespawnManager.cs"
+"Assets/Map Object/Script/KnockbackObject.cs"
+"Assets/Player/PlayerCon.cs"
+"Assets/PlayerStep/BabyStepsOrbitCamera.cs"
+"Assets/PlayerStep/BabyStepsPhysics.cs"
 -langversion:9.0
 /deterministic
 /optimize-
