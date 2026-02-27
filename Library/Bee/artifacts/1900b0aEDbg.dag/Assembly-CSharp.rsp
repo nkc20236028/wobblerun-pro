@@ -409,10 +409,11 @@
 "Assets/Demo/demo script/gimmick/RotateBar.cs"
 "Assets/Demo/demo script/Player/DemoPlayer.cs"
 "Assets/Demo/demo script/Player/RespawnManager.cs"
+"Assets/KnockbackTrigger.cs"
 "Assets/Map Object/Script/KnockbackObject.cs"
-"Assets/Player/PlayerCon.cs"
 "Assets/PlayerStep/BabyStepsOrbitCamera.cs"
 "Assets/PlayerStep/BabyStepsPhysics.cs"
+"Assets/TriggerTouchLogger.cs"
 -langversion:9.0
 /deterministic
 /optimize-
