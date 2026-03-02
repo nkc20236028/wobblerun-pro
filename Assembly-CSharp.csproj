@@ -61,8 +61,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.62f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DemoPlayer3.cs" />
     <Compile Include="Assets\Demo\demo script\GameManager\Goalpoint.cs" />
     <Compile Include="Assets\PlayerStep\BabyStepsOrbitCamera.cs" />
+    <Compile Include="Assets\BabyStepsPhysics2.cs" />
     <Compile Include="Assets\Demo\demo script\Player\RespawnManager.cs" />
     <Compile Include="Assets\PlayerStep\BabyStepsPhysics.cs" />
     <Compile Include="Assets\KnockbackTrigger.cs" />
