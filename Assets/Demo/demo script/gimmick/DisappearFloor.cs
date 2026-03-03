@@ -12,6 +12,8 @@ public class DisappearFloor : MonoBehaviour
     public float disappearDelay = 0.1f;
     public float respawnTime = 3f;
 
+    public float shakeStartDelay = 5f;
+
     public float shakeTime = 0.5f;
     public float shakePower = 0.05f;
     
@@ -44,6 +46,7 @@ public class DisappearFloor : MonoBehaviour
 
     IEnumerator DisappearAndRespawn()
     {
+        yield return new WaitForSeconds(shakeStartDelay);
 
         float elapsed = 0f;
 

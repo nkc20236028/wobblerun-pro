@@ -74,6 +74,7 @@
     <Compile Include="Assets\TriggerTouchLogger.cs" />
     <Compile Include="Assets\Demo\demo script\Player\DemoPlayer.cs" />
     <Compile Include="Assets\Map Object\Script\KnockbackObject.cs" />
+    <Compile Include="Assets\playercontroller.cs" />
     <Compile Include="Assets\Demo\demo script\gimmick\DisappearFloor.cs" />
   </ItemGroup>
   <ItemGroup>

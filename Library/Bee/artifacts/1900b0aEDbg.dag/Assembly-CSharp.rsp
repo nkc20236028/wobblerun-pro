@@ -413,6 +413,7 @@
 "Assets/DemoPlayer3.cs"
 "Assets/KnockbackTrigger.cs"
 "Assets/Map Object/Script/KnockbackObject.cs"
+"Assets/playercontroller.cs"
 "Assets/PlayerStep/BabyStepsOrbitCamera.cs"
 "Assets/PlayerStep/BabyStepsPhysics.cs"
 "Assets/TriggerTouchLogger.cs"
