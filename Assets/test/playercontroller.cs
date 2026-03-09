@@ -23,7 +23,7 @@ public class playercontroller : MonoBehaviour
 
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+       // controller = GetComponent<CharacterController>();
        // respawn = GetComponent<RespawnManager>();
     }
 
@@ -47,8 +47,8 @@ public class playercontroller : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         // ˆÚ“®id—Í{°ˆÚ“®j
-        //Vector3 totalMove = velocity + groundDelta / Time.deltaTime;
-        //controller.Move(totalMove * Time.deltaTime);
+        Vector3 totalMove = velocity + groundDelta / Time.deltaTime;
+        controller.Move(totalMove * Time.deltaTime);
 
         // ‰¡•ûŒü‚ÌŠµ«‚ğ—}‚¦‚é
         if (controller.isGrounded)
@@ -84,20 +84,20 @@ public class playercontroller : MonoBehaviour
     }
 
     // ‚Á”ò‚Ñ
-    void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        Debug.Log("Õ“Ë");
+    //void OnControllerColliderHit(ControllerColliderHit hit)
+    //{
+    //    Debug.Log("Õ“Ë");
 
-        if (hit.collider.CompareTag("Obstacle"))
-        {
-            Debug.Log("‚«”ò‚Î‚µ");
-            Vector3 dir = (transform.position - hit.transform.position).normalized;
-            dir.y = 0f;
+    //    if (hit.collider.CompareTag("Obstacle"))
+    //    {
+    //        Debug.Log("‚«”ò‚Î‚µ");
+    //        Vector3 dir = (transform.position - hit.transform.position).normalized;
+    //        dir.y = 0f;
 
-            velocity = dir * knockbackPower;
-            velocity.y = knockUpPower;
-        }
-    }
+    //        velocity = dir * knockbackPower;
+    //        velocity.y = knockUpPower;
+    //    }
+    //}
 
     public void DisableControl()
     {

@@ -61,20 +61,22 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.62f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DemoPlayer3.cs" />
     <Compile Include="Assets\Demo\demo script\GameManager\Goalpoint.cs" />
+    <Compile Include="Assets\Map Object\Script\KnockbackTrigger.cs" />
     <Compile Include="Assets\PlayerStep\BabyStepsOrbitCamera.cs" />
-    <Compile Include="Assets\BabyStepsPhysics2.cs" />
     <Compile Include="Assets\Demo\demo script\Player\RespawnManager.cs" />
     <Compile Include="Assets\PlayerStep\BabyStepsPhysics.cs" />
-    <Compile Include="Assets\KnockbackTrigger.cs" />
+    <Compile Include="Assets\test\playercontroller.cs" />
+    <Compile Include="Assets\reload.cs" />
     <Compile Include="Assets\Demo\demo script\GameManager\CheckPoint.cs" />
     <Compile Include="Assets\Demo\demo script\gimmick\MoveGround.cs" />
     <Compile Include="Assets\Demo\demo script\gimmick\RotateBar.cs" />
-    <Compile Include="Assets\TriggerTouchLogger.cs" />
+    <Compile Include="Assets\test\BabyStepsPhysics2.cs" />
     <Compile Include="Assets\Demo\demo script\Player\DemoPlayer.cs" />
+    <Compile Include="Assets\ChangeScene.cs" />
+    <Compile Include="Assets\test\DemoPlayer3.cs" />
+    <Compile Include="Assets\PlayerStep\TriggerTouchLogger.cs" />
     <Compile Include="Assets\Map Object\Script\KnockbackObject.cs" />
-    <Compile Include="Assets\playercontroller.cs" />
     <Compile Include="Assets\Demo\demo script\gimmick\DisappearFloor.cs" />
   </ItemGroup>
   <ItemGroup>

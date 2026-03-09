@@ -402,7 +402,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Assets/BabyStepsPhysics2.cs"
+"Assets/ChangeScene.cs"
 "Assets/Demo/demo script/GameManager/CheckPoint.cs"
 "Assets/Demo/demo script/GameManager/Goalpoint.cs"
 "Assets/Demo/demo script/gimmick/DisappearFloor.cs"
@@ -410,13 +410,15 @@
 "Assets/Demo/demo script/gimmick/RotateBar.cs"
 "Assets/Demo/demo script/Player/DemoPlayer.cs"
 "Assets/Demo/demo script/Player/RespawnManager.cs"
-"Assets/DemoPlayer3.cs"
-"Assets/KnockbackTrigger.cs"
 "Assets/Map Object/Script/KnockbackObject.cs"
-"Assets/playercontroller.cs"
+"Assets/Map Object/Script/KnockbackTrigger.cs"
 "Assets/PlayerStep/BabyStepsOrbitCamera.cs"
 "Assets/PlayerStep/BabyStepsPhysics.cs"
-"Assets/TriggerTouchLogger.cs"
+"Assets/PlayerStep/TriggerTouchLogger.cs"
+"Assets/reload.cs"
+"Assets/test/BabyStepsPhysics2.cs"
+"Assets/test/DemoPlayer3.cs"
+"Assets/test/playercontroller.cs"
 -langversion:9.0
 /deterministic
 /optimize-
