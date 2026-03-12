@@ -412,6 +412,7 @@
 "Assets/Demo/demo script/Player/RespawnManager.cs"
 "Assets/Map Object/Script/KnockbackObject.cs"
 "Assets/Map Object/Script/KnockbackTrigger.cs"
+"Assets/new/ShowImage.cs"
 "Assets/PlayerStep/BabyStepsOrbitCamera.cs"
 "Assets/PlayerStep/BabyStepsPhysics.cs"
 "Assets/PlayerStep/TriggerTouchLogger.cs"

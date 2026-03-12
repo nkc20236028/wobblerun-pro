@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Demo\demo script\GameManager\Goalpoint.cs" />
     <Compile Include="Assets\Map Object\Script\KnockbackTrigger.cs" />
+    <Compile Include="Assets\new\ShowImage.cs" />
     <Compile Include="Assets\PlayerStep\BabyStepsOrbitCamera.cs" />
     <Compile Include="Assets\Demo\demo script\Player\RespawnManager.cs" />
     <Compile Include="Assets\PlayerStep\BabyStepsPhysics.cs" />
